@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>场景应用H5</title>
+    <!-- meta:vp -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<div class="arrow"></div>
+
+<div class="music" id="musicBox"></div>
+<audio id="musicAudio" src="img/sjsznh.mp3" loop preload="none"></audio>
+<!-- autoplay loop preload(预加载 页面加载完在播放) -->
+<!--swiper
+无缝滚动原理
+会把第一个复制一份放在最后面
+把最后一张复制一份放在最前面
+   0 page length-2
+   1 page1
+   2 page2
+   3 page1 length-1
+
+-->
+<div class="swiper-container">
+    <!-- 图片内容 -->
+    <div class="swiper-wrapper">
+        <!-- 第一屏 -->
+        <div class="swiper-slide page01">
+            <img src="img/page1-text1.png"/>
+            <img src="img/page1-text2.png"/>
+            <img src="img/page1-text3.png"/>
+            <img src="img/page1-text4.png"/>
+        </div>
+        <div class="swiper-slide page02">
+            <img src="img/page2-text1.png"/>
+            <img src="img/page2-text2.png"/>
+            <img src="img/page2-text3.png"/>
+            <img src="img/page2-text4.png"/>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
